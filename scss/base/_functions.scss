@@ -1,0 +1,10 @@
+// Functions
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+@function grid-column-width($n) {
+  @return unquote(($column-width * $n)+'%');
+}
+
+@function grid-offset-length($n) {
+  @return grid-column-width($n);
+}

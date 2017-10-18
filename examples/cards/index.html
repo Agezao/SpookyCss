@@ -1,0 +1,198 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Cards | SpookyCss</title>
+  <meta name="description" content="Spooky is a simple, responsive boilerplate to kickstart any responsive project. In a nutshell, it's Skeleton with some adjustments of personal taste and a tentative of being bootstrap compatible.">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+  <link rel="stylesheet" href="../../css/spooky.css">
+
+  <style type="text/css">
+    body {
+      background: #f7f7f7;
+    }
+
+    .card {
+      background: #fff;
+      padding: 10px 10px 40px 10px;
+      position: relative;
+      overflow: hidden;
+      width: calc(100% - 33px);
+      margin: 0 auto;
+    }
+
+    .card header {
+      width: calc(100% + 20px);
+      position: relative;
+      top: 0;
+      left: 0;
+      margin: -10px 0 10px -10px;
+      position: relative;
+      height: 175px;
+      overflow: hidden;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .card h4 { 
+      text-transform: uppercase;
+      font-family: 'Montserrat', 'Raleway', sans-serif;
+      font-size: 2.55rem;
+      letter-spacing: -.25rem;
+      margin: 0;
+      padding: 10px;
+      background: rgba(255, 255, 255, 0.7);
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .card .content {
+      height: 260px;
+      overflow: auto;
+    }
+
+    .card .content::-webkit-scrollbar-track
+    {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      background-color: #F5F5F5;
+    }
+
+    .card .content::-webkit-scrollbar
+    {
+      width: 6px;
+      background-color: #F5F5F5;
+    }
+
+    .card .content::-webkit-scrollbar-thumb
+    {
+      background-color: #666;
+    }
+
+    .card .footer {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      max-height: 40px;
+    }
+
+    .card .footer .button {
+      width: 50%;
+      float: left;
+      margin: 0;
+      border-radius: 0;
+      border-left: none !important;
+      border-right: none !important;
+      border-bottom: none !important;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container pd-40 pd-cl-h">
+    <div class="row ma-5 ma-cl-h">
+      <div class="col-6">
+        <div class="card light border-radius">
+          <header style="background-image: url(http://placeimg.com/600/600/people)">
+            <h4>Card Header</h4>
+          </header>
+          <div class="content">
+            <p>Suspendisse non faucibus nulla. Nulla bibendum lectus sed pulvinar pretium. Maecenas vel ultricies nisl. Fusce mollis, nibh at bibendum bibendum, felis nibh rhoncus metus, at tincidunt velit nunc eu ligula.<br>
+            Curabitur in justo id sapien tincidunt mattis nec et ipsum. Fusce volutpat nisi velit, eleifend porttitor ante varius sed. Vestibulum lacus tellus, tristique ut feugiat ut, consectetur ac tellus. </p>
+          </div>
+          <div class="footer center-text">
+            <a class="button button-primary">Add to Favorites</a>
+            <a class="button">See more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="card light border-radius">
+          <header style="background-image: url(http://placeimg.com/600/600/people)">
+            <h4>Card Header</h4>
+          </header>
+          <div class="content">
+            <p>Suspendisse non faucibus nulla. Nulla bibendum lectus sed pulvinar pretium. Maecenas vel ultricies nisl. Fusce mollis, nibh at bibendum bibendum, felis nibh rhoncus metus, at tincidunt velit nunc eu ligula.</p>
+            <p>Curabitur in justo id sapien tincidunt mattis nec et ipsum. Fusce volutpat nisi velit, eleifend porttitor ante varius sed. Vestibulum lacus tellus, tristique ut feugiat ut, consectetur ac tellus. </p>
+          </div>
+          <div class="footer center-text">
+            <a class="button button-primary">Add to Favorites</a>
+            <a class="button">See more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row ma-5 ma-cl-h">
+      <div class="col-4">
+        <div class="card light border-radius">
+          <header style="background-image: url(http://placeimg.com/600/600/people)">
+            <h4>Card Header</h4>
+          </header>
+          <div class="content">
+            <p>Suspendisse non faucibus nulla. Nulla bibendum lectus sed pulvinar pretium. Maecenas vel ultricies nisl. Fusce mollis, nibh at bibendum bibendum, felis nibh rhoncus metus, at tincidunt velit nunc eu ligula.</p>
+            <p>Curabitur in justo id sapien tincidunt mattis nec et ipsum. Fusce volutpat nisi velit, eleifend porttitor ante varius sed. Vestibulum lacus tellus, tristique ut feugiat ut, consectetur ac tellus. </p>
+          </div>
+          <div class="footer center-text">
+            <a class="button button-primary">Add to Favorites</a>
+            <a class="button">See more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card light border-radius">
+          <header style="background-image: url(http://placeimg.com/600/600/people)">
+            <h4>Card Header</h4>
+          </header>
+          <div class="content">
+            <p>Suspendisse non faucibus nulla. Nulla bibendum lectus sed pulvinar pretium. Maecenas vel ultricies nisl. Fusce mollis, nibh at bibendum bibendum, felis nibh rhoncus metus, at tincidunt velit nunc eu ligula.</p>
+            <p>Curabitur in justo id sapien tincidunt mattis nec et ipsum. Fusce volutpat nisi velit, eleifend porttitor ante varius sed. Vestibulum lacus tellus, tristique ut feugiat ut, consectetur ac tellus. </p>
+          </div>
+          <div class="footer center-text">
+            <a class="button button-primary">Add to Favorites</a>
+            <a class="button">See more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card light border-radius">
+          <header style="background-image: url(http://placeimg.com/600/600/people)">
+            <h4>Card Header</h4>
+          </header>
+          <div class="content">
+            <p>Suspendisse non faucibus nulla. Nulla bibendum lectus sed pulvinar pretium. Maecenas vel ultricies nisl. Fusce mollis, nibh at bibendum bibendum, felis nibh rhoncus metus, at tincidunt velit nunc eu ligula.</p>
+            <p>Curabitur in justo id sapien tincidunt mattis nec et ipsum. Fusce volutpat nisi velit, eleifend porttitor ante varius sed. Vestibulum lacus tellus, tristique ut feugiat ut, consectetur ac tellus. </p>
+          </div>
+          <div class="footer center-text">
+            <a class="button button-primary">Add to Favorites</a>
+            <a class="button">See more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row ma-5 ma-cl-h">
+      <div class="col-12">
+        <div class="card light border-radius">
+          <header style="background-image: url(http://placeimg.com/600/600/people)">
+            <h4>Card Header</h4>
+          </header>
+          <div class="content">
+            <p>Suspendisse non faucibus nulla. Nulla bibendum lectus sed pulvinar pretium. Maecenas vel ultricies nisl. Fusce mollis, nibh at bibendum bibendum, felis nibh rhoncus metus, at tincidunt velit nunc eu ligula.<br>
+            Curabitur in justo id sapien tincidunt mattis nec et ipsum. Fusce volutpat nisi velit, eleifend porttitor ante varius sed. Vestibulum lacus tellus, tristique ut feugiat ut, consectetur ac tellus. </p>
+          </div>
+          <div class="footer center-text">
+            <a class="button button-primary">Add to Favorites</a>
+            <a class="button">See more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

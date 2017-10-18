@@ -1,0 +1,793 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>SpookyCss 👻: A responsive starting point with just needed UI features</title>
+  <meta name="description" content="Spooky is a simple, responsive boilerplate to kickstart any responsive project and provides (a tentative of) bootstrap compatibility.">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" sizes="32x32" href="http://emojipedia-us.s3.amazonaws.com/cache/72/fc/72fc7b549a2f89e7f129d53e357df048.png">
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/spooky.css">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+
+  <section class="header center-text ma-0 ma-cl-h dark">
+    <div>
+      <h1 class="spookytitle">SpookyCss</h1>
+      <img class="spookyimage" src="http://image.flaticon.com/icons/svg/252/252149.svg" />
+      <h1>SpookyCss</h1>
+      <h4>A responsive starting point with just needed UI features.</h4>
+      <div class="pd-20 pd-cl-h pd-cl-t">
+        <a class="button button-primary ma-5 ma-cl-v" href="https://github.com/Agezao/SpookyCss/archive/master.zip">Download</a>
+        <a class="button ma-5 ma-cl-v" href="https://github.com/agezao/SpookyCss">Github</a>
+      </div>
+      <div class="features container pd-40 pd-cl-h pd-cl-b">
+        <div class="col-4">
+          Designed to be a starting point and then progressively enhanced.
+        </div>
+        <div class="col-4">
+          Ready to use out of the box. <br> Or compile only the necessary.
+        </div>
+        <div class="col-4">
+          Quick to start with zero compiling or installing necessary.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <!-- Why use Spooky -->
+    <section id="intro">
+      <h5 class="bold-header">Should I be Spooked?</h5>
+      <p>The Spooky "framework" contains just the basic for your project. You should be Spooked if you want a starting point or some of the features presented here to start your project. With Spooky you can suit the basics needs of modern web for a simple project or use as a starting point to bootstrap your on UI framework.</p>
+    </section>
+
+    <hr />
+    <h3 class="center-text ma-60 ma-cl-h ma-cl-b">Meet the features.</h3>
+
+    <!-- Grid -->
+    <section id="grid">
+      <h5 class="bold-header">The grid</h5>
+      <p>The grid is a <u>12-column fluid grid with a max width of 960px</u>, that shrinks with the browser/device at smaller sizes. The max width can be changed with one line of CSS and all columns will resize accordingly. Additionally, you can use the built in <code>.container-sm</code> for a max-width of 750px, or <code>.container-lg</code> for a max-width pf 1170px. The syntax is simple and it makes coding responsive much easier. Go ahead, resize the browser. </p>
+      <div class="example-grid container full-width">
+        <div class="row">
+          <div class="col-1">.col-1</div>
+          <div class="col-11">.col-11</div>
+        </div>
+        <div class="row">
+          <div class="col-2">.col-2</div>
+          <div class="col-10">.col-10</div>
+        </div>
+        <div class="row">
+          <div class="col-3">.col-3</div>
+          <div class="col-9">.col-9</div>
+        </div>
+        <div class="row">
+          <div class="col-4">.col-4</div>
+          <div class="col-8">.col-8</div>
+        </div>
+        <div class="row">
+          <div class="col-5">.col-5</div>
+          <div class="col-7">.col-7</div>
+        </div>
+        <div class="row">
+          <div class="col-6">.col-6</div>
+          <div class="col-6">.col-6</div>
+        </div>
+        <div class="row">
+          <div class="col-7">.col-7</div>
+          <div class="col-5">.col-5</div>
+        </div>
+        <div class="row">
+          <div class="col-8">.col-8</div>
+          <div class="col-4">.col-4</div>
+        </div>
+        <div class="row">
+          <div class="col-9">.col-9</div>
+          <div class="col-3">.col-3</div>
+        </div>
+        <div class="row">
+          <div class="col-10">.col-10</div>
+          <div class="col-2">.col-2</div>
+        </div>
+        <div class="row">
+          <div class="col-11">.col-11</div>
+          <div class="col-1">.col-1</div>
+        </div>
+        <div class="row">
+          <div class="col-12">.col-12</div>
+        </div>
+        <div class="row">
+          <div class="col-4 col-offset-4">.col-4 .col-offset-4</div>
+        </div>
+      </div>
+
+
+      <!-- CODE EXAMPLE ———————————————————————————————————————— -->
+      <pre class="code-example">
+      <code class="code-example-body prettyprint">
+  &lt;!-- .container is main centered wrapper --&gt;
+  &lt;div class="container full-width"&gt;
+
+    &lt;!-- columns should be the immediate child of a .row --&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="col-1"&gt;One&lt;/div&gt;
+      &lt;div class="col-11"&gt;Eleven&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- just use a col- and class the column number --&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="col-2"&gt;Two&lt;/div&gt;
+      &lt;div class="col-10"&gt;Ten&lt;/div&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+
+  &lt;!-- Note: columns can be nested, but it's not recommended since Spooky's
+  grid has %-based gutters, meaning a nested grid results in variable with gutters (which can end up being *really* 
+  small on certain browser/device sizes) --&gt;
+      </code>
+      </pre>
+      <!-- ————————————————————————————————————————————————————— -->
+
+
+    </section>
+
+
+    <!-- Flex -->
+    <section id="flex">
+      <h5 class="bold-header">Flexing</h5>
+      <p>Spooky provide some handy classes to help you with flex-box alignment within your itens. You can turn an iten "flexible" by adding the <code>.flex</code> class, and then complementing it's flex-align with classes like <code>.flex-start</code>, <code>.flex-center</code> and <code>.flex-end</code>. More to come soon on the flex-box subject.</p>
+
+      <small class="ma-10 ma-cl-h ma-cl-b pull-left"><i>.container .flex .flex-start</i></small>
+      <div class="example-grid container full-width flex flex-start" style="border: 1px solid #e1e1e1; min-height: 120px">
+        <div class="row">
+          <div class="col-1">.col-1</div>
+          <div class="col-11">.col-11</div>
+        </div>
+      </div>
+
+      <small class="ma-10 ma-cl-h ma-cl-b pull-left"><i>.container .flex .flex-center</i></small>
+      <div class="example-grid container full-width flex flex-center" style="border: 1px solid #e1e1e1; min-height: 120px">
+        <div class="row">
+          <div class="col-1">.col-1</div>
+          <div class="col-11">.col-11</div>
+        </div>
+      </div>
+
+      <small class="ma-10 ma-cl-h ma-cl-b pull-left"><i>.container .flex .flex-end</i></small>
+      <div class="example-grid container full-width flex flex-end" style="border: 1px solid #e1e1e1; min-height: 120px">
+        <div class="row">
+          <div class="col-1">.col-1</div>
+          <div class="col-11">.col-11</div>
+        </div>
+      </div>
+
+
+      <!-- CODE EXAMPLE ———————————————————————————————————————— -->
+      <pre class="code-example">
+      <code class="code-example-body prettyprint">
+  &lt;!-- Applying flex classes --&gt;
+
+  &lt;div class="container flex flex-center"&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="col-1"&gt;.col-1&lt;/div&gt;
+      &lt;div class="col-11"&gt;.col-11&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+      </code>
+      </pre>
+      <!-- ————————————————————————————————————————————————————— -->
+
+
+    </section>
+
+
+    <!-- Typography -->
+    <section id="typography" class="overflow-hidden">
+      <h5 class="bold-header">Typography</h5>
+      <p>Type is all set with the <code>rems</code>, so font-sizes and spacial relationships can be responsively sized based on a single <code>&lt;html&gt;</code> font-size property. Out of the box, Spooky never changes the <code>&lt;html&gt;</code> font-size, but it's there in case you need it for your project. All measurements are still base 10 though so, an <code>&lt;h1&gt;</code> with <code>5.0rem</code>font-size just means <code>50px</code>.</p>
+      <div class="row">
+        <div class="col-12">
+          <h1>Heading<span class="heading-font-size"> <code>&lt;h1&gt;</code> 5.0rem</span></h1>
+          <h2>Heading<span class="heading-font-size"> <code>&lt;h2&gt;</code> 4.2rem</span></h2>
+          <h3>Heading<span class="heading-font-size"> <code>&lt;h3&gt;</code> 3.6rem</span></h3>
+          <h4>Heading<span class="heading-font-size"> <code>&lt;h4&gt;</code> 3.0rem</span></h4>
+          <h5>Heading<span class="heading-font-size"> <code>&lt;h5&gt;</code> 2.4rem</span></h5>
+        </div>
+        <div class="col-12 pd-20 pd-cl-h">
+          <p><strong>The typography base</strong> is <a href="http://www.google.com/fonts/specimen/Raleway">Raleway</a> served by Google, set at 15rem (15px) over a 1.6 line height (24px). Other type basics like <a href="#">anchors</a>, <strong>strong</strong>, <em>emphasis</em>, and <u>underline</u> are all obviously included.</p>
+          <p><strong>Headings</strong> create a family of distinct sizes each with specific <code>letter-spacing</code>, <code>line-height</code>, and <code>margins</code>.</p>
+        </div>
+      </div>
+
+
+      <!-- CODE EXAMPLE ———————————————————————————————————————— -->
+      <pre class="code-example">
+        <code class="code-example-body prettyprint">
+  &lt;!-- Standard Headings --&gt;
+  &lt;h1&gt;Heading&lt;/h1&gt;
+  &lt;h2&gt;Heading&lt;/h2&gt;
+  &lt;h3&gt;Heading&lt;/h3&gt;
+  &lt;h4&gt;Heading&lt;/h4&gt;
+  &lt;h5&gt;Heading&lt;/h5&gt;
+
+  &lt;!-- Base type size --&gt;
+  &lt;p&gt;The base type is 15px over 1.6 line height (24px)&lt;/p&gt;
+
+  &lt;!-- Other styled text tags --&gt;
+  &lt;strong&gt;Bolded&lt;/strong&gt;
+  &lt;em&gt;Italicized&lt;/em&gt;
+  &lt;a&gt;Colored&lt;/a&gt;
+  &lt;u&gt;Underlined&lt;/u&gt;
+        </code>
+      </pre>
+
+      <!-- ————————————————————————————————————————————————————— -->
+
+
+    </section>
+
+    <!-- Typography Helpers -->
+    <section id="typography-helpers" class="overflow-hidden">
+      <h5 class="bold-header">Typography Helpers</h5>
+      <p>Also on typography you have a plenty of handful classes to give you more flexibility when writing your texts. Like the util and very helpful <code>.uppercase</code>, <code>.center-text</code> and many more.</p>
+      <div class="row pd-10" style="border: 1px solid #e1e1e1; min-height: 120px">
+        <div class="col-12">
+          <p class="uppercase">I'm at uppercase</p>
+          <p class="center-text">I'm centered</p>
+          <p class="right-text">I'm right aligned</p>
+          <p>I'm at <span class="italic">italic</span> and I can be at <span class="underline">underline</span> too</p>
+          <p class="truncate col-2 ma-0 row">I'm a truncated very long text</p>
+        </div>
+      </div>
+
+
+      <!-- CODE EXAMPLE ———————————————————————————————————————— -->
+      <pre class="code-example">
+        <code class="code-example-body prettyprint">
+  /* Typography Helper Classes */
+
+  .full-width
+
+  .bold-header
+
+  .uppercase
+
+  .lowercase
+
+  .italic
+
+  .justify
+
+  .underline
+
+  .truncate
+
+  .center-text
+
+  .left-text
+
+  .right-text
+        </code>
+      </pre>
+
+      <!-- ————————————————————————————————————————————————————— -->
+
+    </section>
+
+    <!-- Buttons -->
+    <section id="buttons">
+      <h5 class="bold-header">Buttons</h5>
+      <p>Buttons on Spooky are presented in some different colors and sizes. Button styles are applied to a number of appropriate form elements, but can also be arbitrarily attached to anchors with a <code>.button</code> class. Support for icons (from ionicons) are also provided on the buttons side.</p>
+      <div class="center-text">
+        <div>
+          <a class="button" href="#">Anchor button</a>
+          <button>Button element</button>
+          <input type="submit" value="submit input">
+          <input type="button" value="button input">
+        </div>
+        <div>
+          <a class="button button-primary" href="#">Anchor button</a>
+          <button class="button-primary">Button element</button>
+          <input class="button-primary" type="submit" value="submit input">
+          <input class="button-primary" type="button" value="button input">
+        </div>
+        <div>
+          <a class="button button-red" href="#">Anchor button</a>
+          <button class="button-red">Button element</button>
+          <input class="button-red" type="submit" value="submit input">
+          <input class="button-red" type="button" value="button input">
+        </div>
+        <div>
+          <a class="button button-green" href="#">Anchor button</a>
+          <button class="button-green">Button element</button>
+          <input class="button-green" type="submit" value="submit input">
+          <input class="button-green" type="button" value="button input">
+        </div>
+        <div>
+          <a class="button button-dark" href="#">Anchor button</a>
+          <button class="button-dark">Button element</button>
+          <input class="button-dark" type="submit" value="submit input">
+          <input class="button-dark" type="button" value="button input">
+        </div>
+        <div>
+          <button class="button ion-checkmark-round">Button element</button>
+          <button class="button-dark ion-shuffle">Button element</button>
+        </div>
+        <div>
+          <button class="button-primary hollow-button ion-android-send">Hollow button</button>
+          <button class="button-red hollow-button ion-android-close">Hollow button</button>
+          <button class="button-green hollow-button ion-checkmark-round">Hollow button</button>
+        </div>
+        <div>
+          <button class="button-primary tag ion-android-close">Button Tag</button>
+          <button class="button-primary sm ion-shuffle">Button Small</button>
+          <button class="button-primary ion-android-send">Button Regular</button>
+          <button class="button-primary lg ion-checkmark-round">Button Large</button>
+        </div>
+      </div>
+
+
+      <!-- CODE EXAMPLE ———————————————————————————————————————— -->
+      <pre class="code-example">
+        <code class="code-example-body prettyprint">
+  &lt;!-- Standard buttons --&gt;
+  &lt;a class="button" href="#"&gt;Anchor button&lt;/a&gt;
+  &lt;button&gt;Button element&lt;/button&gt;
+  &lt;input type="submit" value="submit input"&gt;
+  &lt;input type="button" value="button input"&gt;
+
+  &lt;!-- Primary buttons --&gt;
+  &lt;a class="button button-primary" href="#"&gt;Anchor button&lt;/a&gt;
+  &lt;button class="button-primary"&gt;Button element&lt;/button&gt;
+  &lt;input class="button-primary" type="submit" value="submit input"&gt;
+  &lt;input class="button-primary" type="button" value="button input"&gt;
+
+  &lt;!-- Red buttons --&gt;
+  &lt;a class="button button-red" href="#"&gt;Anchor button&lt;/a&gt;
+  &lt;button class="button-red"&gt;Button element&lt;/button&gt;
+  &lt;input class="button-red" type="submit" value="submit input"&gt;
+  &lt;input class="button-red" type="button" value="button input"&gt;
+
+  &lt;!-- Green buttons --&gt;
+  &lt;a class="button button-green" href="#"&gt;Anchor button&lt;/a&gt;
+  &lt;button class="button-green"&gt;Button element&lt;/button&gt;
+  &lt;input class="button-green" type="submit" value="submit input"&gt;
+  &lt;input class="button-green" type="button" value="button input"&gt;
+
+  &lt;!-- Icon buttons --&gt;
+  &lt;button class="button ion-checkmark-round"&gt;Button element&lt;/button&gt;
+  &lt;button class="button-dark ion-shuffle"&gt;Button element&lt;/button&gt;
+
+  &lt;!-- Hollow buttons --&gt;
+  &lt;button class="button-primary hollow-button ion-android-send"&gt;Hollow button&lt;/button&gt;
+  &lt;button class="button-red hollow-button ion-android-close"&gt;Hollow button&lt;/button&gt;
+  &lt;button class="button-green hollow-button ion-checkmark-round"&gt;Hollow button&lt;/button&gt;
+
+  &lt;!-- Sized buttons --&gt;
+  &lt;button class="button-primary tag ion-android-close"&gt;Button Tag&lt;/button&gt;
+  &lt;button class="button-primary sm ion-shuffle"&gt;Button Small&lt;/button&gt;
+  &lt;button class="button-primary ion-android-send"&gt;Button Regular&lt;/button&gt;
+  &lt;button class="button-primary lg ion-checkmark-round"&gt;Button Large&lt;/button&gt;
+        </code>
+      </pre>
+      <!-- ————————————————————————————————————————————————————— -->
+
+
+    </section>
+
+    <!-- Forms -->
+    <section id="forms">
+      <h5 class="bold-header">Forms</h5>
+      <p>Forms are a huge pain, but hopefully these styles make it a bit easier. All inputs, select, and buttons are normalized for a common height cross-browser so inputs can be stacked or placed alongside each other. The're some utilities classes to be applied on forms to, like the <code>.clear</code>, that keeps only the bottom bar of the element, and <code>.lg</code> and <code>.sm</code> that changes the size of the element.</p>
+      <div class="docs-example docs-example-forms">
+        <form>
+          <div class="row">
+            <div class="col-12 pd-5 pd-cl-v">
+              <input class="full-width lg clear center-text" type="text" placeholder="Project Name" id="exampleProjectNameInput">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 pd-5 pd-cl-v">
+              <label for="exampleEmailInput">First name</label>
+              <input class="full-width clear" type="text" placeholder="John" id="exampleNameFirstInput">
+            </div>
+            <div class="col-6 pd-5 pd-cl-v">
+              <label for="exampleEmailInput">Last name</label>
+              <input class="full-width clear" type="text" placeholder="Snow" id="exampleNameLastInput">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 pd-5 pd-cl-v">
+              <label for="exampleEmailInput">Your email</label>
+              <input class="full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+            </div>
+            <div class="col-6 pd-5 pd-cl-v">
+              <label for="exampleRecipientInput">Reason for contacting</label>
+              <select class="full-width" id="exampleRecipientInput">
+                <option value="Option 1">Questions</option>
+                <option value="Option 2">Admiration</option>
+                <option value="Option 3">Can I get your number?</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-12 pd-5 pd-cl-v">
+            <label for="exampleMessage">Message</label>
+            <textarea class="full-width" placeholder="Hi Dave …" id="exampleMessage"></textarea>
+            <label class="example-send-yourself-copy">
+              <input type="checkbox">
+              <span class="label-body">Send a copy to yourself</span>
+            </label>
+            <input class="button-primary" type="submit" value="Submit">
+          </div>
+        </form>
+      </div>
+
+
+      <!-- CODE EXAMPLE ———————————————————————————————————————— -->
+      <pre class="code-example"><code class="code-example-body prettyprint">
+  &lt;!-- The above form looks like this --&gt;
+  &lt;form&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="col-12 pd-5 pd-cl-v"&gt;
+        &lt;input class="full-width lg clear center-text" type="text" placeholder="Project Name" id="exampleProjectNameInput"&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="col-6 pd-5 pd-cl-v"&gt;
+        &lt;label for="exampleEmailInput"&gt;First name&lt;/label&gt;
+        &lt;input class="full-width clear" type="text" placeholder="John" id="exampleNameFirstInput"&gt;
+      &lt;/div&gt;
+      &lt;div class="col-6 pd-5 pd-cl-v"&gt;
+        &lt;label for="exampleEmailInput"&gt;Last name&lt;/label&gt;
+        &lt;input class="full-width clear" type="text" placeholder="Snow" id="exampleNameLastInput"&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="col-6"&gt;
+        &lt;label for="exampleEmailInput"&gt;Your email&lt;/label&gt;
+        &lt;input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput"&gt;
+      &lt;/div&gt;
+      &lt;div class="col-6"&gt;
+        &lt;label for="exampleRecipientInput"&gt;Reason for contacting&lt;/label&gt;
+        &lt;select class="u-full-width" id="exampleRecipientInput"&gt;
+          &lt;option value="Option 1"&gt;Questions&lt;/option&gt;
+          &lt;option value="Option 2"&gt;Admiration&lt;/option&gt;
+          &lt;option value="Option 3"&gt;Can I get your number?&lt;/option&gt;
+        &lt;/select&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row col-12"&gt;
+      &lt;label for="exampleMessage"&gt;Message&lt;/label&gt;
+      &lt;textarea class="u-full-width" placeholder="Hi Dave …" id="exampleMessage"&gt;&lt;/textarea&gt;
+      &lt;label class="example-send-yourself-copy"&gt;
+        &lt;input type="checkbox"&gt;
+        &lt;span class="label-body"&gt;Send a copy to yourself&lt;/span&gt;
+      &lt;/label&gt;
+      &lt;input class="button-primary" type="submit" value="Submit"&gt;
+    &lt;/div&gt;
+  &lt;/form&gt;
+
+  &lt;!-- Always wrap checkbox and radio inputs in a label and use a &lt;span class="label-body"&gt; inside of it --&gt;
+
+      </code>
+      </pre>
+      <!-- ————————————————————————————————————————————————————— -->
+
+
+    </section>
+
+    <!-- Tables -->
+    <section id="tables">
+      <h5 class="bold-header">Tables</h5>
+      <p>Be sure to use properly formed table markup with <code>&lt;thead&gt;</code> and <code>&lt;tbody&gt;</code> when building a <code>table</code>.</p>
+      <div class="docs-example">
+        <table class="full-width">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Sex</th>
+              <th>Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dave Gamache</td>
+              <td>26</td>
+              <td>Male</td>
+              <td>San Francisco</td>
+            </tr>
+            <tr>
+              <td>Dwayne Johnson</td>
+              <td>42</td>
+              <td>Male</td>
+              <td>Hayward</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+      <!-- CODE EXAMPLE ———————————————————————————————————————— -->
+      <pre class="code-example"><code class="code-example-body prettyprint">
+  &lt;table class="full-width"&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Name&lt;/th&gt;
+        &lt;th&gt;Age&lt;/th&gt;
+        &lt;th&gt;Sex&lt;/th&gt;
+        &lt;th&gt;Location&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Dave Gamache&lt;/td&gt;
+        &lt;td&gt;26&lt;/td&gt;
+        &lt;td&gt;Male&lt;/td&gt;
+        &lt;td&gt;San Francisco&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Dwayne Johnson&lt;/td&gt;
+        &lt;td&gt;42&lt;/td&gt;
+        &lt;td&gt;Male&lt;/td&gt;
+        &lt;td&gt;Hayward&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+      </code>
+      </pre>
+      <!-- ————————————————————————————————————————————————————— -->
+
+
+    </section>
+
+    <!-- Colors -->
+    <section id="colors">
+      <h5 class="bold-header">Colors</h5>
+      <p>Spooky came with some spooky default colors too. You can apply them by their intuitive short-hand class, like <code>.red</code> and <code>.green</code>.</p>
+
+      <div class="row center-text">
+        <div class="col-4 pd-20 pd-cl-h primary">
+          Primary
+        </div>
+        <div class="col-4 pd-20 pd-cl-h red">
+          Red
+        </div>
+        <div class="col-4 pd-20 pd-cl-h green">
+          Green
+        </div>
+      </div>
+      <div class="row center-text pd-10 pd-cl-h">
+        <div class="col-6 pd-20 pd-cl-h light">
+          Light
+        </div>
+        <div class="col-6 pd-20 pd-cl-h dark">
+          Dark
+        </div>
+      </div>
+
+      <!-- CODE EXAMPLE ———————————————————————————————————————— -->
+      <pre class="code-example"><code class="code-example-body prettyprint">
+  &lt;!-- Color Classes --&gt;
+
+  &lt;div class="row center-text"&gt;
+    &lt;div class="col-4 pd-20 pd-cl-h primary"&gt;
+      Primary
+    &lt;/div&gt;
+    &lt;div class="col-4 pd-20 pd-cl-h red"&gt;
+      Red
+    &lt;/div&gt;
+    &lt;div class="col-4 pd-20 pd-cl-h green"&gt;
+      Green
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="row center-text pd-10 pd-cl-h"&gt;
+    &lt;div class="col-6 pd-20 pd-cl-h light"&gt;
+      Light
+    &lt;/div&gt;
+    &lt;div class="col-6 pd-20 pd-cl-h dark"&gt;
+      Dark
+    &lt;/div&gt;
+  &lt;/div&gt;
+      </code>
+      </pre>
+      <!-- ————————————————————————————————————————————————————— -->
+
+
+    </section>
+
+    <section id="modal">
+      <h5 class="bold-header">Modal</h5>
+      <p>Spooky presents a default main <code>.modal</code> class with some help classes to bootstrap your modal game. Just add the <code>.modal</code> class and withing this element you can play with <code>.model-header</code>, <code>.modal-body</code>, <code>.modal-footer</code>.</p>
+
+      <div class="row">
+        <div class="modal col-6 col-offset-3">
+          <div class="modal-header pd-10 pd-cl-h pd-cl-t">
+            <h5 class="bold-header">Awesome Modal Title</h5>
+            <span class="close-btn ion-close-round center-text">close</span>
+          </div>
+          <div class="modal-body">
+            <p>Etiam ornare turpis massa, nec congue erat mattis sed. Praesent urna ligula, convallis vitae eleifend a, venenatis ut diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur auctor eu felis nec maximus. Nulla hendrerit neque mauris, a pretium est vestibulum sed. Sed sollicitudin enim ac consequat porta. Maecenas nec lacus maximus est commodo aliquam. Ut laoreet enim in mi consequat tincidunt. Nunc ornare felis vitae dui cursus varius. Sed enim mi, varius et magna ac, lacinia mollis enim. Donec gravida, libero vitae viverra porta, turpis purus suscipit risus, eu molestie lacus arcu nec nisi.</p>
+          </div>
+          <div class="modal-footer center-text">
+            <button class="button-primary ion-checkmark-round">Accept</button>
+            <button class="button-red ion-close-round">Reject</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CODE EXAMPLE ———————————————————————————————————————— -->
+      <pre class="code-example">
+      <code class="code-example-body prettyprint">
+  &lt;!-- Modals --&gt;
+
+  &lt;div class="modal col-6 col-offset-3"&gt;
+    &lt;div class="modal-header pd-10 pd-cl-h pd-cl-t"&gt;
+      &lt;h5 class="bold-header"&gt;Awesome Modal Title&lt;/h5&gt;
+      &lt;span class="close-btn ion-close-round center-text"&gt;close&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="modal-body"&gt;
+      &lt;p&gt;Etiam ornare turpis massa, nec congue erat mattis sed. Praesent urna ligula, convallis vitae eleifend a, venenatis ut diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur auctor eu felis nec maximus. Nulla hendrerit neque mauris, a pretium est vestibulum sed. Sed sollicitudin enim ac consequat porta. Maecenas nec lacus maximus est commodo aliquam. Ut laoreet enim in mi consequat tincidunt. Nunc ornare felis vitae dui cursus varius. Sed enim mi, varius et magna ac, lacinia mollis enim. Donec gravida, libero vitae viverra porta, turpis purus suscipit risus, eu molestie lacus arcu nec nisi.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="modal-footer center-text"&gt;
+      &lt;button class="button-primary ion-checkmark-round"&gt;Accept&lt;/button&gt;
+      &lt;button class="button-red ion-close-round"&gt;Reject&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+      </code>
+      </pre>
+      <!-- ————————————————————————————————————————————————————— -->
+
+
+    </section>
+
+
+    <!-- Queries -->
+    <section id="queries">
+      <h5 class="bold-header">Media queries</h5>
+      <p>Spooky uses media queries to serve its scalable grid, but also has a list of queries for convenience of styling your site across devices. The queries are mobile-first, meaning they target <code>min-width</code>. Mobile-first queries are how Spooky's grid is built and is the preferrable method of organizing CSS. It means all styles outside of a query apply to all devices, then larger devices are targeted for enhancement. This prevents small devices from having to parse tons of unused CSS. The sizes for the queries are:</p>
+      <div class="row">
+        <div class="col-6">
+          <ul>
+            <li><strong>Desktop HD</strong>: 1200px</li>
+            <li><strong>Desktop</strong>: 1000px</li>
+          </ul>
+        </div>
+        <div class="col-6">
+          <ul>
+            <li><strong>Phablet</strong>: 850px</li>
+            <li><strong>Mobile</strong>: 400px</li>
+          </ul>
+        </div>
+      </div>
+
+
+      <!-- CODE EXAMPLE ———————————————————————————————————————— -->
+      <pre class="code-example">
+        <code class="code-example-body prettyprint">
+  /* Mobile first queries */
+
+  /* Larger than mobile */
+  @media (min-width: 400px) {}
+
+  /* Larger than phablet */
+  @media (min-width: 850px) {}
+
+  /* Larger than desktop */
+  @media (min-width: 1000px) {}
+
+  /* Larger than Desktop HD */
+  @media (min-width: 1200px) {}
+        </code>
+      </pre>
+      <!-- ————————————————————————————————————————————————————— -->
+
+
+    </section>
+
+
+    <!-- Utilities and Misc. -->
+    <section id="utilities">
+      <h5 class="bold-header">Utilities</h5>
+      <p>Spooky has some small utility classes that act as easy-to-use helpers. Sometimes it's better to use a utility class than create a whole new class just to float an element.</p>
+
+
+      <!-- CODE EXAMPLE ———————————————————————————————————————— -->
+      <pre class="code-example">
+        <code class="code-example-body prettyprint">
+  /* Utility Classes */
+
+  /* 100% width for an element */
+  .full-width
+
+  /* Max 100% width for an element */
+  .max-full-width
+
+  /* Float to the right */
+  .pull-right
+
+  /* Float to the left */
+  .pull-left 
+
+  /* Center align text */
+  .center-text 
+
+  /* Hidden the overflow of an element */
+  .overflow-hidden
+
+  /* Apply the global border-radius */
+  .border-radius
+
+  /* Transform text to uppercase */
+  .uppercase
+
+  /* Remove borders from object */
+  .bd-cl
+
+  /* Remove -top- border of object */
+  .bd-cl-t
+
+  /* Remove -right- border of object */
+  .bd-cl-r 
+
+  /* Remove -bottom- border of object */
+  .bd-cl-b 
+
+  /* Remove -left- border of object */
+  .bd-cl-l 
+
+        </code>
+      </pre>
+      <!-- ————————————————————————————————————————————————————— -->
+
+
+    </section>
+
+
+    <!-- Spacing. -->
+    <section id="spacing">
+      <h5 class="bold-header">Spacing</h5>
+      <p>Within Spooky come some spacing features to use as default, with this spacings you can better position elements with ease. You'll have margin and padding with some default px units and also some clears. You can go all the way from <code>.ma-0</code> for a 0 margin to <code>.ma-80</code> for a 80px margin. There're some clears that may vary from <code>.ma-cl-v</code> to clear vertical margins to <code>.ma-cl-t</code> to clear only the top margin. All this apply to padding to, just change the <code>ma</code> to <code>pd</code>, just like <code>.ma-80</code> --> <code>.pd-80</code> or also <code>.ma-cl-v</code> --> <code>.pd-cl-v</code>. You get it.</p>
+
+
+      <!-- CODE EXAMPLE ———————————————————————————————————————— -->
+      <pre class="code-example">
+        <code class="code-example-body prettyprint">
+  &lt;!-- Spacing Classes --&gt;
+
+  &lt;!-- Give a left margin of 80px --&gt;
+  &lt;div class="ma-80 ma-cl-v"&gt; &lt;/div&gt;
+
+  &lt;!-- Give a top padding of 60px --&gt;
+  &lt;div class="pd-60 pd-cl-h pd-cl-b"&gt; &lt;/div&gt;
+
+        </code>
+      </pre>
+      <!-- ————————————————————————————————————————————————————— -->
+
+
+    </section>
+
+    <!-- Examples -->
+    <section class="ma-60 ma-cl-h ma-cl-t row" id="examples">
+      <h5 class="bold-header">Examples</h5>
+      <div class="row">
+          <p>You can check some examples of the usage of the framework at the Examples page:</p>
+          <a class="button" href="examples">Examples</a>
+      </div>
+    </section>
+    <br>
+    <br>
+
+  </div>
+</body>
+</html>

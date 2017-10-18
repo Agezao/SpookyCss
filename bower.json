@@ -1,0 +1,25 @@
+{
+  "name": "spookycss",
+  "version": "1.1.4",
+  "homepage": "agezao.github.io/SpookyCss/",
+  "authors": [
+    "Gabriel Age <0800.grc@gmail.com> (http://fb.com/agezao)"
+  ],
+  "description": "A responsive starting point with just needed UI features",
+  "main": "scss/spooky.scss",
+  "keywords": [
+    "spooky",
+    "sass",
+    "scss",
+    "responsive",
+    "boilerplate"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "normalize.css": "~3.0.2"
+  }
+}

@@ -1,0 +1,48 @@
+// Utilities
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.full-width {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.max-full-width {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.border-radius {
+  border-radius: $global-radius;
+}
+
+.bd-cl {
+  border: none;
+}
+
+.bd-cl-t {
+  border-top: none;
+}
+
+.bd-cl-r {
+  border-right: none;
+}
+
+.bd-cl-b {
+  border-bottom: none;
+}
+
+.bd-cl-l {
+  border-left: none;
+}

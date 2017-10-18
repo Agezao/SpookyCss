@@ -1,0 +1,18 @@
+.flex {
+	display: flex;
+
+	&.flex-start {
+		-webkit-align-items: flex-start;
+    	align-items: flex-start;
+	}
+
+	&.flex-center {
+		-webkit-align-items: center;
+    	align-items: center;
+	}
+
+	&.flex-end {
+		-webkit-align-items: flex-end;
+    	align-items: flex-end;
+	}
+}

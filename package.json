@@ -1,0 +1,35 @@
+{
+  "name": "spookycss",
+  "version": "1.1.4",
+  "homepage": "agezao.github.io/SpookyCss/",
+  "authors": [
+    "Gabriel Age <0800.grc@gmail.com> (http://fb.com/agezao)"
+  ],
+  "description": "A responsive starting point with just needed UI features",
+  "scripts": {
+    "build": "gulp build",
+    "start": "gulp dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/agezao/SpookyCss"
+  },
+  "bugs": {
+    "url": "https://github.com/agezao/SpookyCss/issues"
+  },
+  "keywords": [
+    "spooky",
+    "sass",
+    "scss",
+    "responsive",
+    "boilerplate"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.0.0",
+    "gulp-clean-css": "^2.3.2",
+    "gulp-sourcemaps": "^1.9.1",
+    "gulp-rename":"^1.2.2"
+  }
+}
