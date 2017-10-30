@@ -1,13 +1,9 @@
 /*
-* Spooky Css V1.0.0
-* A responsive boilerplate based on Skeleton(and the (un)official Sass Version)
-* Free to use under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
-* 25/12/2016
-* Sass Version by Seth Coelen https://github.com/whatsnewsaes
+* Spooky Css V2.0.0
 */
 
 /* Base files. */
+@import "base/fonts";
 @import "base/normalize";
 @import "base/variables";
 @import "base/functions";

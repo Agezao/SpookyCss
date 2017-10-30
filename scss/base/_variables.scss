@@ -34,7 +34,8 @@ $light-dark: lighten($main-dark, 13.5%) !default;
 $dark-dark: darken($main-dark, 6.5%) !default;
 
 // Typography
-$font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-primary: "Source Sans Pro", Arial, sans-serif !default;
+$font-header: "Raleway", "Source Sans Pro", Arial, sans-serif !default;
 
 //Grid Variables
 $container-sm-width: 750px !default;
@@ -62,22 +63,22 @@ $input-clear-padding: 9px 10px;
 
 //Buttons
 $button-height: auto;
-$button-text-size: 1.1rem;
-$button-padding: 10px 30px 9px 30px;
-$button-before-size: 1.5rem;
+$button-text-size: .9rem;
+$button-padding: 10px 25px 10px 25px;
+$button-before-size: 1.1rem;
 $button-before-margin: 1px 5px 0 0;
 
-$button-lg-text-size: 1.4rem;
-$button-lg-padding: 12px 32px 11px 32px;
-$button-lg-before-size: 1.8rem;
+$button-lg-text-size: 1.08rem;
+$button-lg-padding: 10px 30px 9px 30px;
+$button-lg-before-size: 1.308rem;
 $button-lg-before-margin: 1px 5px 0 0;
 
-$button-sm-text-size: .9rem;
-$button-sm-padding: 9px 24px 8px 24px;
-$button-sm-before-size: 1.4rem;
-$button-sm-before-margin: 0px 5px 0 0;
+$button-sm-text-size: .7rem;
+$button-sm-padding: 7px 22px 6px 22px;
+$button-sm-before-size: 0.88rem;
+$button-sm-before-margin: 1px 5px 0 0;
 
-$button-tag-text-size: .8rem;
-$button-tag-padding: 7px 15px 6px 15px;
-$button-tag-before-size: 1.2rem;
+$button-tag-text-size: .6rem;
+$button-tag-padding: 5px 13px 4px 13px;
+$button-tag-before-size: .8rem;
 $button-tag-before-margin: 0px 5px 0 0;

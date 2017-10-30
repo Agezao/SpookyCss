@@ -2,16 +2,18 @@
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 .button,
-button {
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
   display: inline-block;
   height: $button-height;
   padding: $button-padding;
   color: $secondary-color;
   text-align: center;
   font-size: $button-text-size;
-  font-weight: 600;
-  letter-spacing: .1rem;
-  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: .03rem;
   text-decoration: none;
   white-space: nowrap;
   background-color: #fff;
@@ -19,6 +21,7 @@ button {
   border: 1px solid $border-color;
   cursor: pointer;
   box-sizing: border-box;
+  line-height: inherit;
 
   &:before {
     font-size: $button-before-size;
@@ -53,105 +56,36 @@ button {
       margin: $button-tag-before-margin;
     }
   }
-}
-
-input {
-  &[type="submit"],
-  &[type="reset"],
-  &[type="button"] {
-    display: inline-block;
-    height: $button-height;
-    padding: $button-padding;
-    color: $secondary-color;
-    text-align: center;
-    font-size: $button-text-size;
-    font-weight: 600;
-    letter-spacing: .1rem;
+  &.bold {
     text-transform: uppercase;
-    text-decoration: none;
-    white-space: nowrap;
-    background-color: #fff;
-    border-radius: $global-radius;
-    border: 1px solid $border-color;
-    cursor: pointer;
-    box-sizing: border-box;
-    line-height: inherit;
-
-    &:before {
-      font-size: $button-before-size;
-      float: left;
-      margin: $button-before-margin;
-    }
-
-    &.lg {
-      font-size: $button-lg-text-size;
-      padding: $button-lg-padding;
-
-      &:before {
-        font-size: $button-lg-before-size;
-        margin: $button-lg-before-margin;
-      }
-    }
-    &.sm {
-      font-size: $button-sm-text-size;
-      padding: $button-sm-padding;
-
-      &:before {
-        font-size: $button-sm-before-size;
-        margin: $button-sm-before-margin;
-      }
-    }
-    &.tag {
-      font-size: $button-tag-text-size;
-      padding: $button-tag-padding;
-
-      &:before {
-        font-size: $button-tag-before-size;
-        margin: $button-tag-before-margin;
-      }
-    }
   }
 }
 
 .button:hover,
-button:hover {
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
   color: $dark-grey;
   border-color: lighten($dark-grey, 33.3%);
   outline: 0;
-}
-
-input {
-  &[type="submit"]:hover,
-  &[type="reset"]:hover,
-  &[type="button"]:hover {
-    color: $dark-grey;
-    border-color: lighten($dark-grey, 33.3%);
-    outline: 0;
-  }
 }
 
 .button:focus,
-button:focus {
-  color: $dark-grey;
-  border-color: lighten($dark-grey, 33.3%);
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
   outline: 0;
 }
-
-input {
-  &[type="submit"]:focus,
-  &[type="reset"]:focus,
-  &[type="button"]:focus {
-    color: $dark-grey;
-    border-color: lighten($dark-grey, 33.3%);
-    outline: 0;
-  }
-}
-
 
 
 // Primary Button
 .button.button-primary,
-button.button-primary {
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
   color: #fff;
   background-color: $primary-color;
   border-color: $primary-color;
@@ -163,51 +97,23 @@ button.button-primary {
   }
 }
 
-input {
-  &[type="submit"].button-primary,
-  &[type="reset"].button-primary,
-  &[type="button"].button-primary {
-    color: #fff;
-    background-color: $primary-color;
-    border-color: $primary-color;
-
-    &.hollow-button {
-      color: $primary-color;
-      background-color: transparent;
-      border-color: $primary-color;
-    }
-  }
-}
-
 .button.button-primary:hover,
-button.button-primary:hover {
+button.button-primary:hover,
+input[type="submit"].button-primary:hover,
+input[type="reset"].button-primary:hover,
+input[type="button"].button-primary:hover {
   color: #fff;
   background-color: $link-color;
   border-color: $link-color;
 }
-
-input {
-  &[type="submit"].button-primary:hover,
-  &[type="reset"].button-primary:hover,
-  &[type="button"].button-primary:hover {
-    color: #fff;
-    background-color: $link-color;
-    border-color: $link-color;
-  }
-}
-
-.button.button-primary:focus,
-button.button-primary:focus {
-  color: #fff;
-  background-color: $link-color;
-  border-color: $link-color;
-}
-
 
 
 // Red Button
 .button.button-red,
-button.button-red {
+button.button-red,
+input[type="submit"].button-red,
+input[type="reset"].button-red,
+input[type="button"].button-red {
   color: #fff;
   background-color: $main-red;
   border-color: $dark-red;
@@ -219,44 +125,22 @@ button.button-red {
   }
 }
 
-input.button-red {
-  &[type="submit"],
-  &[type="reset"],
-  &[type="button"] {
-    color: #fff;
-    background-color: $main-red;
-    border-color: $dark-red;
-
-    &.hollow-button {
-      color: $main-red;
-      background-color: #fff;
-      border-color: $dark-red;
-    }
-  }
-}
-
 .button.button-red:hover,
-button.button-red:hover {
+button.button-red:hover,
+input[type="submit"].button-red:hover,
+input[type="reset"].button-red:hover,
+input[type="button"].button-red:hover {
   background-color: $dark-red;
   color: #fff;
-}
-
-input {
-  &[type="submit"].button-red:focus,
-  &[type="reset"].button-red:focus,
-  &[type="button"].button-red:focus,
-  &[type="submit"].button-red:hover,
-  &[type="reset"].button-red:hover,
-  &[type="button"].button-red:hover {
-    background-color: $dark-red;
-    color: #fff;
-  }
 }
 
 
 // Green Buttons
 .button.button-green,
-button.button-green {
+button.button-green,
+input[type="submit"].button-green,
+input[type="reset"].button-green,
+input[type="button"].button-green {
   color: #fff;
   background-color: $main-green;
   border-color: $dark-green;
@@ -268,64 +152,30 @@ button.button-green {
   }
 }
 
-input.button-green {
-  &[type="submit"],
-  &[type="reset"],
-  &[type="button"] {
-    color: #fff;
-    background-color: $main-green;
-    border-color: $dark-green;
-  }
-}
-
 .button.button-green:hover,
-button.button-green:hover {
+button.button-green:hover,
+input[type="submit"].button-green:hover,
+input[type="reset"].button-green:hover,
+input[type="button"].button-green:hover {
   background-color: $dark-green;
   color: #fff;
 }
 
-input.button-green {
-  &[type="submit"]:focus,
-  &[type="reset"]:focus,
-  &[type="button"]:focus,
-  &[type="submit"]:hover,
-  &[type="reset"]:hover,
-  &[type="button"]:hover {
-    background-color: $dark-green;
-    color: #fff;
-  }
-}
-
 // Dark Buttons
 .button.button-dark,
-button.button-dark {
+button.button-dark,
+input[type="submit"].button-dark,
+input[type="reset"].button-dark,
+input[type="button"].button-dark {
   color: #fff;
   background-color: $main-dark;
   border-color: $dark-dark;
 }
 
-input.button-dark {
-  &[type="submit"],
-  &[type="reset"],
-  &[type="button"] {
-    color: #fff;
-    background-color: $main-dark;
-    border-color: $dark-dark;
-  }
-}
-
 .button.button-dark:hover,
-button.button-dark:hover {
+button.button-dark:hover,
+input[type="submit"].button-dark:hover,
+input[type="reset"].button-dark:hover,
+input[type="button"].button-dark:hover {
   background-color: $dark-dark;
-}
-
-input.button-dark {
-  &[type="submit"]:focus,
-  &[type="reset"]:focus,
-  &[type="button"]:focus,
-  &[type="submit"]:hover,
-  &[type="reset"]:hover,
-  &[type="button"]:hover {
-    background-color: $dark-dark;
-  }
 }

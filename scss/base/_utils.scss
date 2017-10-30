@@ -23,6 +23,10 @@
   overflow: hidden;
 }
 
+.display-inline {
+  display: inline-block;
+}
+
 .border-radius {
   border-radius: $global-radius;
 }
