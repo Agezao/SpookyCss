@@ -20,6 +20,9 @@
     </div>
   </section>
   <div class="container">
+
+
+    <!-- Headers -->
     <section id="headers">
       <h4 class="bold-header">Headers/Typography</h4>
       <hr />
@@ -36,11 +39,41 @@
         <h4>Text modifiers</h4>
         <p><span class="uppercase">Uppercase Modifier</span>, <span class="lowercase">Lowercase Modifier</span>, <span class="italic">Italic Modifier</span>, <span class="bold-header">Bold Modifier</span>, <span class="underline">Underline Modifier</span> ... </p>
       </div>
+
+      <!-- CODE EXAMPLE ———————————————————————————————————————— -->
+      <pre class="code-example">        <code class="code-example-body prettyprint">
+  &lt;!-- Standard Headings --&gt;
+  &lt;h1&gt;Heading&lt;/h1&gt;
+  &lt;h2&gt;Heading&lt;/h2&gt;
+  &lt;h3&gt;Heading&lt;/h3&gt;
+  &lt;h4&gt;Heading&lt;/h4&gt;
+  &lt;h5&gt;Heading&lt;/h5&gt;
+
+  &lt;!-- Base type size --&gt;
+  &lt;p&gt;The base type is 15px over 1.6 line height (24px)&lt;/p&gt;
+
+  &lt;!-- Other styled text tags --&gt;
+  &lt;strong&gt;Bolded&lt;/strong&gt;
+  &lt;em&gt;Italicized&lt;/em&gt;
+  &lt;a&gt;Colored&lt;/a&gt;
+  &lt;u&gt;Underlined&lt;/u&gt;
+
+  &lt;!-- Classes --&gt;
+  .uppercase .lowercase .italic .bold-heade .underline
+
+        </code>
+      </pre>
+      <!-- ————————————————————————————————————————————————————— -->
     </section>
     <br /><br />
+
+
+    <!-- GRID -->
     <section id="grid">
       <h4 class="bold-header">Grid</h4>
       <hr />
+      <p>The grid is a <u>12-column fluid grid with a max width of 960px</u>, that shrinks with the browser/device at smaller sizes. The max width can be changed with one line of CSS and all columns will resize accordingly. Additionally, you can use the built in <code>.container-sm</code> for a max-width of 750px, or <code>.container-lg</code> for a max-width pf 1170px. The syntax is simple and it makes coding responsive much easier. Go ahead, resize the browser. </p>
+
       <div class="overflow-hidden">
         <div class="row">
           <div class="col-1">.col-1</div>
@@ -93,11 +126,93 @@
           <div class="col-4 col-offset-4">.col-4 .col-offset-4</div>
         </div>
       </div>
+      
+      <!-- CODE EXAMPLE ———————————————————————————————————————— -->
+      <pre class="code-example">      
+        <code class="code-example-body prettyprint">
+  &lt;!-- .container is main centered wrapper --&gt;
+  &lt;div class="container full-width"&gt;
+
+    &lt;!-- columns should be the immediate child of a .row --&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="col-1"&gt;One&lt;/div&gt;
+      &lt;div class="col-11"&gt;Eleven&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- just use a col- and class the column number --&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="col-2"&gt;Two&lt;/div&gt;
+      &lt;div class="col-10"&gt;Ten&lt;/div&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+
+  &lt;!-- Note: columns can be nested, but it's not recommended since Spooky's
+  grid has %-based gutters, meaning a nested grid results in variable with gutters (which can end up being *really* 
+  small on certain browser/device sizes) --&gt;
+        </code>
+      </pre>
+      <!-- ————————————————————————————————————————————————————— -->
+
     </section>
     <br /><br />
+
+
+    <!-- Flex -->
+    <section id="flex">
+      <h4 class="bold-header">Flexing</h4>
+      <hr />
+
+      <p>Spooky provide some handy classes to help you with flex-box alignment within your itens. You can turn an iten "flexible" by adding the <code>.flex</code> class, and then complementing it's flex-align with classes like <code>.flex-start</code>, <code>.flex-center</code> and <code>.flex-end</code>. More to come soon on the flex-box subject.</p>
+
+      <small class="ma-10 ma-cl-h ma-cl-b pull-left"><i>.container .flex .flex-start</i></small>
+      <div class="example-grid container full-width flex flex-start" style="border: 1px solid #e1e1e1; min-height: 120px">
+        <div class="row">
+          <div class="col-1">.col-1</div>
+          <div class="col-11">.col-11</div>
+        </div>
+      </div>
+
+      <small class="ma-10 ma-cl-h ma-cl-b pull-left"><i>.container .flex .flex-center</i></small>
+      <div class="example-grid container full-width flex flex-center" style="border: 1px solid #e1e1e1; min-height: 120px">
+        <div class="row">
+          <div class="col-1">.col-1</div>
+          <div class="col-11">.col-11</div>
+        </div>
+      </div>
+
+      <small class="ma-10 ma-cl-h ma-cl-b pull-left"><i>.container .flex .flex-end</i></small>
+      <div class="example-grid container full-width flex flex-end" style="border: 1px solid #e1e1e1; min-height: 120px">
+        <div class="row">
+          <div class="col-1">.col-1</div>
+          <div class="col-11">.col-11</div>
+        </div>
+      </div>
+
+
+      <!-- CODE EXAMPLE ———————————————————————————————————————— -->
+      <pre class="code-example">      <code class="code-example-body prettyprint">
+  &lt;!-- Applying flex classes --&gt;
+
+  &lt;div class="container flex flex-center"&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="col-1"&gt;.col-1&lt;/div&gt;
+      &lt;div class="col-11"&gt;.col-11&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+      </code>
+      </pre>
+      <!-- ————————————————————————————————————————————————————— -->
+    </section>
+    <br /><br />
+
+
+    <!-- Buttons -->
     <section id="buttons">
       <h4 class="bold-header">Buttons</h4>
       <hr />
+      <p>Buttons on Spooky are presented in some different colors and sizes. Button styles are applied to a number of appropriate form elements, but can also be arbitrarily attached to anchors with a <code>.button</code> class. Support for icons (from ionicons) are also provided on the buttons side.</p>
+
       <div class="center-text">
         <div>
           <a class="button" href="#">Anchor button</a>
@@ -106,37 +221,18 @@
           <input type="button" value="Button input">
         </div>
         <div>
-          <a class="button button-primary" href="#">Anchor button</a>
-          <button class="button-primary">Button element</button>
-          <input class="button-primary" type="submit" value="Submit input">
-          <input class="button-primary" type="button" value="Button input">
+          <button class="button-primary">Primary button</button>
+          <button class="button-red">Red button</button>
+          <button class="button-green">Green button</button>
+          <button class="button-dark">Dark button</button>
         </div>
         <div>
-          <a class="button button-red" href="#">Anchor button</a>
-          <button class="button-red">Button element</button>
-          <input class="button-red" type="submit" value="Submit input">
-          <input class="button-red" type="button" value="Button input">
+          <button class="button ion-checkmark-round">Icon button</button>
+          <button class="button-dark ion-shuffle">Icon button</button>
         </div>
         <div>
-          <a class="button button-green" href="#">Anchor button</a>
-          <button class="button-green">Button element</button>
-          <input class="button-green" type="submit" value="Submit input">
-          <input class="button-green" type="button" value="Button input">
-        </div>
-        <div>
-          <a class="button button-dark" href="#">Anchor button</a>
-          <button class="button-dark">Button element</button>
-          <input class="button-dark" type="submit" value="Submit input">
-          <input class="button-dark" type="button" value="Button input">
-        </div>
-        <div>
-          <button class="button ion-checkmark-round">Button element</button>
-          <button class="button-dark ion-shuffle">Button element</button>
-        </div>
-        <div>
-          <button class="button-primary hollow-button ion-android-send">Hollow button</button>
           <button class="button-red hollow-button ion-android-close">Hollow button</button>
-          <button class="button-green hollow-button ion-checkmark-round">Hollow button</button>
+          <button class="button-green bold ion-checkmark-round">Bold button</button>
         </div>
         <div>
           <button class="button-primary tag ion-android-close">Button Tag</button>
@@ -145,11 +241,31 @@
           <button class="button-primary lg ion-checkmark-round">Button Large</button>
         </div>
         <div>
-          <button class="button-primary bold hollow-button ion-android-send">Hollow button</button>
-          <button class="button-red bold hollow-button ion-android-close">Hollow button</button>
-          <button class="button-green bold hollow-button ion-checkmark-round">Hollow button</button>
+          <button class="pill tag ion-android-close">Pill Tag</button>
+          <button class="pill sm ion-shuffle">Pill Small</button>
+          <button class="pill ion-android-send">Pill Regular</button>
+          <button class="pill lg ion-checkmark-round">Pill Large</button>
         </div>
       </div>
+
+      <!-- CODE EXAMPLE ———————————————————————————————————————— -->
+      <pre class="code-example">      <code class="code-example-body prettyprint">
+  &lt;!-- Types of buttons --&gt;
+
+  &lt;a class="button" href="#"&gt;Anchor button&lt;/a&gt;
+  &lt;button&gt;Button element&lt;/button&gt;
+  &lt;input type="submit" value="Submit input"&gt;
+  &lt;input type="button" value="Button input"&gt;
+
+  &lt;!-- Buttons modifiers --&gt;
+  .button-primary - .button-red - .button-green - .button-dark
+  .tag - .sm - .lg
+  .pill - .hollow-button
+
+      </code>
+      </pre>
+      <!-- ————————————————————————————————————————————————————— -->
+
     </section>
   </div>
 </body>

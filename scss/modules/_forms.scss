@@ -1,6 +1,17 @@
 // Forms
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
+$input-padding: 8px 10px;
+$input-height: auto;
+$input-background: #fff;
+$input-border: 1px solid lighten($border-color, 8.8%);
+
+$input-lg-text-size: 2.4rem;
+$input-clear-padding: 9px 10px;
+
+//
+
+
 textarea,
 select {
   height: $input-height;

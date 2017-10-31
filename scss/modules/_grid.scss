@@ -1,6 +1,19 @@
 // Grids
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
+$container-sm-width: 750px !default;
+$container-width: 960px !default;
+$container-lg-width: 1170px !default;
+
+$container-width-larger-than-mobile: 90% !default;
+$container-width-larger-than-phablet: 90% !default;
+
+$total-columns: 12 !default;
+$column-width: 100 / $total-columns !default; // calculates individual column width based off of # of columns
+$column-margin: 0.5% !default; // space between columns
+
+//
+
 .container,
 .container-sm,
 .container-lg {

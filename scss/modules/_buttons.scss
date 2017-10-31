@@ -1,6 +1,34 @@
 // Buttons
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
+$button-height: auto;
+$button-text-size: .9rem;
+$button-padding: 11px 25px 11px 25px;
+$button-before-size: 1.1rem;
+$button-before-margin: 1px 5px 0 0;
+
+$button-lg-text-size: 1.06rem;
+$button-lg-padding: 13px 30px 12px 30px;
+$button-lg-before-size: 1.308rem;
+$button-lg-before-margin: 1px 5px 0 0;
+
+$button-sm-text-size: .7rem;
+$button-sm-padding: 8px 22px 7px 22px;
+$button-sm-before-size: 0.88rem;
+$button-sm-before-margin: 1px 5px 0 0;
+
+$button-tag-text-size: .6rem;
+$button-tag-padding: 6px 13px 5px 13px;
+$button-tag-before-size: .8rem;
+$button-tag-before-margin: 0px 5px 0 0;
+
+$button-weight: 300;
+$button-weight-colored: 200;
+
+$button-pill-radius: 30px;
+
+//
+
 .button,
 button,
 input[type="submit"],
@@ -12,8 +40,8 @@ input[type="button"] {
   color: $secondary-color;
   text-align: center;
   font-size: $button-text-size;
-  font-weight: 500;
-  letter-spacing: .03rem;
+  font-weight: $button-weight;
+  letter-spacing: -.002;
   text-decoration: none;
   white-space: nowrap;
   background-color: #fff;
@@ -22,6 +50,8 @@ input[type="button"] {
   cursor: pointer;
   box-sizing: border-box;
   line-height: inherit;
+  font-family: $font-header;
+  
 
   &:before {
     font-size: $button-before-size;
@@ -87,13 +117,14 @@ input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
   color: #fff;
-  background-color: $primary-color;
-  border-color: $primary-color;
+  background-color: $dark-blue;
+  border-color: $dark-blue;
+  font-weight: $button-weight-colored;
 
   &.hollow-button {
-    color: $primary-color;
+    color: $dark-blue;
     background-color: transparent;
-    border-color: $primary-color;
+    border-color: $dark-blue;
   }
 }
 
@@ -103,8 +134,8 @@ input[type="submit"].button-primary:hover,
 input[type="reset"].button-primary:hover,
 input[type="button"].button-primary:hover {
   color: #fff;
-  background-color: $link-color;
-  border-color: $link-color;
+  background-color: $medium-blue;
+  border-color: $medium-blue;
 }
 
 
@@ -116,10 +147,11 @@ input[type="reset"].button-red,
 input[type="button"].button-red {
   color: #fff;
   background-color: $main-red;
-  border-color: $dark-red;
+  border-color: $main-red;
+  font-weight: $button-weight-colored;
 
   &.hollow-button {
-    color: $main-red;
+    color: $dark-red;
     background-color: #fff;
     border-color: $dark-red;
   }
@@ -143,7 +175,8 @@ input[type="reset"].button-green,
 input[type="button"].button-green {
   color: #fff;
   background-color: $main-green;
-  border-color: $dark-green;
+  border-color: $main-green;
+  font-weight: $button-weight-colored;
 
   &.hollow-button {
     color: $main-green;
@@ -170,6 +203,7 @@ input[type="button"].button-dark {
   color: #fff;
   background-color: $main-dark;
   border-color: $dark-dark;
+  font-weight: $button-weight-colored;
 }
 
 .button.button-dark:hover,
@@ -178,4 +212,12 @@ input[type="submit"].button-dark:hover,
 input[type="reset"].button-dark:hover,
 input[type="button"].button-dark:hover {
   background-color: $dark-dark;
+}
+
+.button.pill,
+button.pill,
+input[type="submit"].pill,
+input[type="reset"].pill,
+input[type="button"].pill {
+  border-radius: $button-pill-radius;
 }

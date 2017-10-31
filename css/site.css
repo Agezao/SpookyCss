@@ -6,7 +6,8 @@
   padding: 5px 0;
 }
 
-#grid > div .row > div {
+#grid > div .row > div,
+.example-grid .row > div {
   border: 1px solid #eaeaea;
   background: #fbfbfb;
   padding: 5px 8px;
