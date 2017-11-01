@@ -121,7 +121,7 @@ input[type="button"].button-primary {
   border-color: $dark-blue;
   font-weight: $button-weight-colored;
 
-  &.hollow-button {
+  &.hollow {
     color: $dark-blue;
     background-color: transparent;
     border-color: $dark-blue;
@@ -150,7 +150,7 @@ input[type="button"].button-red {
   border-color: $main-red;
   font-weight: $button-weight-colored;
 
-  &.hollow-button {
+  &.hollow {
     color: $dark-red;
     background-color: #fff;
     border-color: $dark-red;
@@ -178,7 +178,7 @@ input[type="button"].button-green {
   border-color: $main-green;
   font-weight: $button-weight-colored;
 
-  &.hollow-button {
+  &.hollow {
     color: $main-green;
     background-color: #fff;
     border-color: $dark-green;
@@ -214,10 +214,44 @@ input[type="button"].button-dark:hover {
   background-color: $dark-dark;
 }
 
+// Pill
 .button.pill,
 button.pill,
 input[type="submit"].pill,
 input[type="reset"].pill,
 input[type="button"].pill {
   border-radius: $button-pill-radius;
+}
+
+// Circle
+.button.circle,
+button.circle,
+input[type="submit"].circle,
+input[type="reset"].circle,
+input[type="button"].circle {
+  border-radius: 200px;
+  padding: 0;
+  width: 38px;
+  height: 38px;
+
+  &:before {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  &.lg {
+    width: 44px;
+    height: 44px;
+  }
+
+  &.sm {
+    width: 32px;
+    height: 32px;
+  }
+
+  &.tag {
+    width: 28px;
+    height: 28px;
+  }
 }

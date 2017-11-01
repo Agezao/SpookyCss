@@ -281,31 +281,6 @@ p {
   text-align: right; }
 
 /* Modules */
-.primary {
-  color: #fff;
-  background-color: #4c84ff;
-  border: 1px solid #4c84ff; }
-
-.light {
-  color: #555555;
-  background-color: #fff;
-  border: 1px solid #bbb; }
-
-.dark {
-  color: #fff;
-  background-color: #444;
-  border: 1px solid #333333; }
-
-.red {
-  color: #fff;
-  background-color: #f94e4e;
-  border: 1px solid #f82e2e; }
-
-.green {
-  color: #fff;
-  background-color: #19d778;
-  border: 1px solid #16b967; }
-
 .container,
 .container-sm,
 .container-lg {
@@ -511,11 +486,11 @@ input[type="button"].button-primary {
   background-color: #048bff;
   border-color: #048bff;
   font-weight: 200; }
-  .button.button-primary.hollow-button,
-  button.button-primary.hollow-button,
-  input[type="submit"].button-primary.hollow-button,
-  input[type="reset"].button-primary.hollow-button,
-  input[type="button"].button-primary.hollow-button {
+  .button.button-primary.hollow,
+  button.button-primary.hollow,
+  input[type="submit"].button-primary.hollow,
+  input[type="reset"].button-primary.hollow,
+  input[type="button"].button-primary.hollow {
     color: #048bff;
     background-color: transparent;
     border-color: #048bff; }
@@ -538,11 +513,11 @@ input[type="button"].button-red {
   background-color: #f94e4e;
   border-color: #f94e4e;
   font-weight: 200; }
-  .button.button-red.hollow-button,
-  button.button-red.hollow-button,
-  input[type="submit"].button-red.hollow-button,
-  input[type="reset"].button-red.hollow-button,
-  input[type="button"].button-red.hollow-button {
+  .button.button-red.hollow,
+  button.button-red.hollow,
+  input[type="submit"].button-red.hollow,
+  input[type="reset"].button-red.hollow,
+  input[type="button"].button-red.hollow {
     color: #f82e2e;
     background-color: #fff;
     border-color: #f82e2e; }
@@ -564,11 +539,11 @@ input[type="button"].button-green {
   background-color: #19d778;
   border-color: #19d778;
   font-weight: 200; }
-  .button.button-green.hollow-button,
-  button.button-green.hollow-button,
-  input[type="submit"].button-green.hollow-button,
-  input[type="reset"].button-green.hollow-button,
-  input[type="button"].button-green.hollow-button {
+  .button.button-green.hollow,
+  button.button-green.hollow,
+  input[type="submit"].button-green.hollow,
+  input[type="reset"].button-green.hollow,
+  input[type="button"].button-green.hollow {
     color: #19d778;
     background-color: #fff;
     border-color: #16b967; }
@@ -604,6 +579,45 @@ input[type="submit"].pill,
 input[type="reset"].pill,
 input[type="button"].pill {
   border-radius: 30px; }
+
+.button.circle,
+button.circle,
+input[type="submit"].circle,
+input[type="reset"].circle,
+input[type="button"].circle {
+  border-radius: 200px;
+  padding: 0;
+  width: 38px;
+  height: 38px; }
+  .button.circle:before,
+  button.circle:before,
+  input[type="submit"].circle:before,
+  input[type="reset"].circle:before,
+  input[type="button"].circle:before {
+    margin: 0;
+    text-align: center;
+    width: 100%; }
+  .button.circle.lg,
+  button.circle.lg,
+  input[type="submit"].circle.lg,
+  input[type="reset"].circle.lg,
+  input[type="button"].circle.lg {
+    width: 44px;
+    height: 44px; }
+  .button.circle.sm,
+  button.circle.sm,
+  input[type="submit"].circle.sm,
+  input[type="reset"].circle.sm,
+  input[type="button"].circle.sm {
+    width: 32px;
+    height: 32px; }
+  .button.circle.tag,
+  button.circle.tag,
+  input[type="submit"].circle.tag,
+  input[type="reset"].circle.tag,
+  input[type="button"].circle.tag {
+    width: 28px;
+    height: 28px; }
 
 .flex {
   display: flex; }
