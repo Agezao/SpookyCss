@@ -712,28 +712,6 @@ label > .label-body {
   margin-left: .5rem;
   font-weight: normal; }
 
-.modal {
-  position: relative;
-  border: 1px solid #e1e1e1;
-  border-radius: 4px;
-  padding: 20px 20px 0 20px; }
-  .modal .modal-header h1, .modal .modal-header h2, .modal .modal-header h3, .modal .modal-header h4, .modal .modal-header h5 {
-    display: inline-block;
-    margin: 0; }
-  .modal .modal-header .close-btn {
-    color: #666;
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: 1rem;
-    cursor: pointer;
-    position: absolute;
-    right: 15px;
-    top: 15px; }
-    .modal .modal-header .close-btn:before {
-      color: #666;
-      display: block;
-      font-size: 2.0rem; }
-
 th,
 td {
   padding: 12px 15px;
