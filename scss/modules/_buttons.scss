@@ -28,6 +28,12 @@ $button-weight-colored: 200;
 $button-pill-radius: 30px;
 
 //
+button,
+.button {
+  margin-bottom: 1rem;
+}
+//
+
 
 .button,
 button,
@@ -255,3 +261,4 @@ input[type="button"].circle {
     height: 28px;
   }
 }
+

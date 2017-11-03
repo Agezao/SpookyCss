@@ -199,6 +199,7 @@ hr {
   border-width: 0;
   border-top: 1px solid #e1e1e1; }
 
+/* Modules */
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 1rem;
@@ -280,7 +281,6 @@ p {
 .right-text {
   text-align: right; }
 
-/* Modules */
 .container,
 .container-sm,
 .container-lg {
@@ -381,6 +381,10 @@ p {
   content: "";
   display: table;
   clear: both; }
+
+button,
+.button {
+  margin-bottom: 1rem; }
 
 .button,
 button,
@@ -631,9 +635,15 @@ input[type="button"].circle {
     -webkit-align-items: flex-end;
     align-items: flex-end; }
 
+input,
+textarea,
+select,
+fieldset {
+  margin-bottom: 1rem; }
+
 textarea,
 select {
-  height: auto;
+  height: 36px;
   padding: 8px 10px;
   background-color: #fff;
   border: 1px solid #d1d1d1;
@@ -649,14 +659,11 @@ select {
     border-right: none !important; }
   textarea.lg,
   select.lg {
-    font-size: 2.4rem; }
-
-select {
-  -webkit-appearance: inherit;
-  padding: 5px 10px; }
+    font-size: 1.3rem;
+    height: 44px; }
 
 input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"] {
-  height: auto;
+  height: 36px;
   padding: 8px 10px;
   background-color: #fff;
   border: 1px solid #d1d1d1;
@@ -665,12 +672,13 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
   box-sizing: border-box; }
   input[type="email"].clear, input[type="number"].clear, input[type="search"].clear, input[type="text"].clear, input[type="tel"].clear, input[type="url"].clear, input[type="password"].clear {
     padding: 9px 10px;
-    border-top: none;
-    border-left: none;
+    border-top: none !important;
+    border-left: none !important;
     border-radius: 0;
-    border-right: none; }
+    border-right: none !important; }
   input[type="email"].lg, input[type="number"].lg, input[type="search"].lg, input[type="text"].lg, input[type="tel"].lg, input[type="url"].lg, input[type="password"].lg {
-    font-size: 2.4rem; }
+    font-size: 1.3rem;
+    height: 44px; }
 
 input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"] {
   -webkit-appearance: none;
@@ -686,12 +694,12 @@ textarea {
   padding-bottom: 6px; }
 
 input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus {
-  border: 1px solid #4c84ff;
+  border: 1px solid #a3a3a3;
   outline: 0; }
 
 textarea:focus,
 select:focus {
-  border: 1px solid #4c84ff;
+  border: 1px solid #a3a3a3;
   outline: 0; }
 
 label,
@@ -712,6 +720,15 @@ label > .label-body {
   margin-left: .5rem;
   font-weight: normal; }
 
+.form-icon {
+  position: absolute;
+  z-index: 9;
+  font-size: 1em;
+  color: #a3a3a3;
+  margin: 10px 0 0 10px; }
+  .form-icon + input {
+    padding: 8px 10px 8px 30px; }
+
 th,
 td {
   padding: 12px 15px;
@@ -726,6 +743,44 @@ th:last-child,
 td:last-child {
   padding-right: 0; }
 
+.full-width {
+  width: 100%;
+  box-sizing: border-box; }
+
+.max-full-width {
+  max-width: 100%;
+  box-sizing: border-box; }
+
+.pull-right {
+  float: right; }
+
+.pull-left {
+  float: left; }
+
+.overflow-hidden {
+  overflow: hidden; }
+
+.display-inline {
+  display: inline-block; }
+
+.border-radius {
+  border-radius: 4px; }
+
+.bd-cl {
+  border: none; }
+
+.bd-cl-t {
+  border-top: none; }
+
+.bd-cl-r {
+  border-right: none; }
+
+.bd-cl-b {
+  border-bottom: none; }
+
+.bd-cl-l {
+  border-left: none; }
+
 .list-reset {
   list-style: none;
   padding-left: 0; }
@@ -735,17 +790,6 @@ td:last-child {
   display: inline-block;
   padding-left: 0; }
 
-button,
-.button {
-  margin-bottom: 1rem; }
-
-input,
-textarea,
-select,
-fieldset {
-  margin-bottom: 1rem; }
-
-/* Utilities */
 .ma-0 {
   margin: 0; }
 
@@ -833,43 +877,5 @@ fieldset {
 .pd-cl-v {
   padding-top: 0;
   padding-bottom: 0; }
-
-.full-width {
-  width: 100%;
-  box-sizing: border-box; }
-
-.max-full-width {
-  max-width: 100%;
-  box-sizing: border-box; }
-
-.pull-right {
-  float: right; }
-
-.pull-left {
-  float: left; }
-
-.overflow-hidden {
-  overflow: hidden; }
-
-.display-inline {
-  display: inline-block; }
-
-.border-radius {
-  border-radius: 4px; }
-
-.bd-cl {
-  border: none; }
-
-.bd-cl-t {
-  border-top: none; }
-
-.bd-cl-r {
-  border-right: none; }
-
-.bd-cl-b {
-  border-bottom: none; }
-
-.bd-cl-l {
-  border-left: none; }
 
 /* Bootstrap compatibily */

@@ -8,22 +8,17 @@
 @import "base/variables";
 @import "base/functions";
 @import "base/base-styles";
-@import "base/typography";
 
 /* Modules */
-@import "modules/grid"; 
+@import "modules/typography";
+@import "modules/grid";
 @import "modules/buttons";
 @import "modules/flex";
 @import "modules/forms";
 @import "modules/tables";
-@import "modules/lists";
-@import "modules/spacing";
 @import "modules/media-queries";
-
-/* Utilities */
-@import "base/spacing";
-@import "base/utils";
-
+@import "modules/utils";
+@import "modules/spacing";
 
 //If bootstrap grid compatibility is a thing for you uncomment the assets you need and build
 /* Bootstrap compatibily */

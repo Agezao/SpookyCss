@@ -274,7 +274,184 @@
 
     </section>
 
-    
+
+    <!-- Forms -->
+    <section id="forms">
+      <h4 class="bold-header">Forms</h4>
+      <hr />
+      <p>Forms are a huge pain, but hopefully these styles make it a bit easier. All inputs, select, and buttons are normalized for a common height cross-browser so inputs can be stacked or placed alongside each other. The're some utilities classes to be applied on forms to, like the <code>.clear</code>, that keeps only the bottom bar of the element, and <code>.lg</code> and <code>.sm</code> that changes the size of the element.</p>
+      <div class="docs-example docs-example-forms">
+        <form class="col-6 col-offset-3 pd-40 pd-cl-h pd-cl-b">
+          <div class="row">
+            <div class="col-12 pd-5 pd-cl-v">
+              <input class="full-width lg clear center-text" type="text" placeholder="Project Name" id="exampleProjectNameInput">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 pd-5 pd-cl-v">
+              <label for="exampleEmailInput">First name</label>
+              <input class="full-width clear" type="text" placeholder="John" id="exampleNameFirstInput">
+            </div>
+            <div class="col-6 pd-5 pd-cl-v">
+              <label for="exampleEmailInput">Last name</label>
+              <input class="full-width clear" type="text" placeholder="Snow" id="exampleNameLastInput">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 pd-5 pd-cl-v">
+              <label for="exampleEmailInput">Your email</label>
+              <i class="form-icon ion-android-mail"></i>
+              <input class="full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 pd-5 pd-cl-v">
+              <label for="exampleEmailInput">Your password</label>
+              <i class="form-icon ion-locked"></i>
+              <input class="full-width" type="Password" placeholder="password" id="examplePasswordInput">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 pd-5 pd-cl-v">
+              <label for="exampleRecipientInput">Type of project</label>
+              <select class="full-width" id="exampleRecipientInput">
+                <option value="Option 1">Big</option>
+                <option value="Option 2">Non-profit</option>
+                <option value="Option 3">Small one</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-12 pd-5 pd-cl-v">
+            <label for="exampleMessage">About your project</label>
+            <textarea class="full-width" placeholder="Be very precise and eloquent" id="exampleMessage"></textarea>
+            <label class="example-send-yourself-copy">
+              <input type="checkbox">
+              <span class="label-body">Agree with the <a href="#">Terms of License.</a></span>
+            </label>
+            <input class="button-primary" type="submit" value="Create Account">
+          </div>
+        </form>
+      </div>
+
+
+      <!-- CODE EXAMPLE ———————————————————————————————————————— -->
+      <pre class="code-example"><code class="code-example-body prettyprint">
+  &lt;!-- The above form looks like this --&gt;
+  &lt;form&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="col-12 pd-5 pd-cl-v"&gt;
+        &lt;input class="full-width lg clear center-text" type="text" placeholder="Project Name" id="exampleProjectNameInput"&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="col-6 pd-5 pd-cl-v"&gt;
+        &lt;label for="exampleEmailInput"&gt;First name&lt;/label&gt;
+        &lt;input class="full-width clear" type="text" placeholder="John" id="exampleNameFirstInput"&gt;
+      &lt;/div&gt;
+      &lt;div class="col-6 pd-5 pd-cl-v"&gt;
+        &lt;label for="exampleEmailInput"&gt;Last name&lt;/label&gt;
+        &lt;input class="full-width clear" type="text" placeholder="Snow" id="exampleNameLastInput"&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="col-6"&gt;
+        &lt;label for="exampleEmailInput"&gt;Your email&lt;/label&gt;
+        &lt;input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput"&gt;
+      &lt;/div&gt;
+      &lt;div class="col-6"&gt;
+        &lt;label for="exampleRecipientInput"&gt;Reason for contacting&lt;/label&gt;
+        &lt;select class="u-full-width" id="exampleRecipientInput"&gt;
+          &lt;option value="Option 1"&gt;Questions&lt;/option&gt;
+          &lt;option value="Option 2"&gt;Admiration&lt;/option&gt;
+          &lt;option value="Option 3"&gt;Can I get your number?&lt;/option&gt;
+        &lt;/select&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row col-12"&gt;
+      &lt;label for="exampleMessage"&gt;Message&lt;/label&gt;
+      &lt;textarea class="u-full-width" placeholder="Hi Dave …" id="exampleMessage"&gt;&lt;/textarea&gt;
+      &lt;label class="example-send-yourself-copy"&gt;
+        &lt;input type="checkbox"&gt;
+        &lt;span class="label-body"&gt;Send a copy to yourself&lt;/span&gt;
+      &lt;/label&gt;
+      &lt;input class="button-primary" type="submit" value="Submit"&gt;
+    &lt;/div&gt;
+  &lt;/form&gt;
+
+  &lt;!-- Always wrap checkbox and radio inputs in a label and use a &lt;span class="label-body"&gt; inside of it --&gt;
+
+      </code>
+      </pre>
+      <!-- ————————————————————————————————————————————————————— -->
+
+
+    </section>
+
+    <!-- Queries -->
+    <section id="queries">
+      <h4 class="bold-header">Media queries</h4>
+      <hr />
+      <p>Spooky uses media queries to serve its scalable grid, but also has a list of queries for convenience of styling your site across devices. The queries are mobile-first, meaning they target <code>min-width</code>. Mobile-first queries are how Spooky's grid is built and is the preferrable method of organizing CSS. It means all styles outside of a query apply to all devices, then larger devices are targeted for enhancement. This prevents small devices from having to parse tons of unused CSS. The sizes for the queries are:</p>
+      <div class="row">
+        <div class="col-6">
+          <ul>
+            <li><strong>Desktop HD</strong>: 1200px</li>
+            <li><strong>Desktop</strong>: 1000px</li>
+          </ul>
+        </div>
+        <div class="col-6">
+          <ul>
+            <li><strong>Phablet</strong>: 850px</li>
+            <li><strong>Mobile</strong>: 400px</li>
+          </ul>
+        </div>
+      </div>
+
+
+      <!-- CODE EXAMPLE ———————————————————————————————————————— -->
+      <pre class="code-example">        <code class="code-example-body prettyprint">
+  /* Mobile first queries */
+
+  /* Larger than mobile */
+  @media (min-width: 400px) {}
+
+  /* Larger than phablet */
+  @media (min-width: 850px) {}
+
+  /* Larger than desktop */
+  @media (min-width: 1000px) {}
+
+  /* Larger than Desktop HD */
+  @media (min-width: 1200px) {}
+        </code>
+      </pre>
+      <!-- ————————————————————————————————————————————————————— -->
+    </section>
+
+
+    <!-- Spacing -->
+    <section id="spacing">
+      <h4 class="bold-header">Spacing</h4>
+      <hr />
+      <p>Within Spooky come some spacing features to use as default, with this spacings you can better position elements with ease. You'll have margin and padding with some default px units and also some clears. You can go all the way from <code>.ma-0</code> for a 0 margin to <code>.ma-80</code> for a 80px margin. There're some clears that may vary from <code>.ma-cl-v</code> to clear vertical margins to <code>.ma-cl-t</code> to clear only the top margin. All this apply to padding to, just change the <code>ma</code> to <code>pd</code>, just like <code>.ma-80</code> --&gt; <code>.pd-80</code> or also <code>.ma-cl-v</code> --&gt; <code>.pd-cl-v</code>. You get it.</p>
+
+
+      <!-- CODE EXAMPLE ———————————————————————————————————————— -->
+      <pre class="code-example">        <code class="code-example-body prettyprint">
+  &lt;!-- Spacing Classes --&gt;
+
+  &lt;!-- Give a left margin of 80px --&gt;
+  &lt;div class="ma-80 ma-cl-v"&gt; &lt;/div&gt;
+
+  &lt;!-- Give a top padding of 60px --&gt;
+  &lt;div class="pd-60 pd-cl-h pd-cl-b"&gt; &lt;/div&gt;
+
+        </code>
+      </pre>
+      <!-- ————————————————————————————————————————————————————— -->
+
+
+    </section>
   </div>
 </body>
 </html>

@@ -2,15 +2,28 @@
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 $input-padding: 8px 10px;
-$input-height: auto;
+$input-icon-padding: 8px 10px 8px 30px;
+$icon-margin: 10px 0 0 10px;
 $input-background: #fff;
 $input-border: 1px solid lighten($border-color, 8.8%);
 
-$input-lg-text-size: 2.4rem;
+$input-lg-text-size: 1.3rem;
 $input-clear-padding: 9px 10px;
+
+$input-lg-height: 44px;
+$input-height: 36px;
+$input-sm-height: 30px;
 
 //
 
+input,
+textarea,
+select,
+fieldset {
+  margin-bottom: 1rem;
+}
+
+//
 
 textarea,
 select {
@@ -32,12 +45,8 @@ select {
 
   &.lg {
     font-size: $input-lg-text-size;
+    height: $input-lg-height;
   }
-}
-
-select {
-  -webkit-appearance: inherit;
-  padding: 5px 10px;
 }
 
 input {
@@ -58,14 +67,15 @@ input {
 
     &.clear {
       padding: $input-clear-padding;
-      border-top: none;
-      border-left: none;
+      border-top: none !important;
+      border-left: none !important;
       border-radius: 0;
-      border-right: none;
+      border-right: none !important;
     }
 
     &.lg {
       font-size: $input-lg-text-size;
+      height: $input-lg-height;
     }
   }
 }
@@ -104,14 +114,14 @@ input {
   &[type="tel"]:focus,
   &[type="url"]:focus,
   &[type="password"]:focus {
-    border: 1px solid $primary-color;
+    border: 1px solid darken($border-color, 9.5%);
     outline: 0;
   }
 }
 
 textarea:focus,
 select:focus {
-  border: 1px solid $primary-color;
+  border: 1px solid darken($border-color, 9.5%);
   outline: 0;
 }
 
@@ -138,4 +148,16 @@ label > .label-body {
   display: inline-block;
   margin-left: .5rem;
   font-weight: normal;
+}
+
+.form-icon {
+  position: absolute;
+  z-index: 9;
+  font-size: 1em;
+  color: darken($border-color, 9.5%);
+  margin: $icon-margin;
+  
+  + input {
+    padding: $input-icon-padding;
+  }
 }
