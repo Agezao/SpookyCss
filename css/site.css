@@ -1,5 +1,9 @@
 #fold {
-  min-height: 60vh;
+  min-height: 90vh;
+}
+
+#fold .container {
+  padding-top: 10vh;
 }
 
 #grid > div .row {
