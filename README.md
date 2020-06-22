@@ -68,10 +68,3 @@ The above list is non-exhaustive. Spooky works perfectly with almost all older v
 ## License
 
 Spooky is under the [open-source MIT license](http://opensource.org/licenses/mit-license.php).
-
-
-## Acknowledgement
-
-Skeleton was created by [Dave Gamache](https://twitter.com/dhg) for a better web.
-
-Skeleton-Sass was created by [Seth Coelen](http://sethcoelen.com) for a better Skeleton.
